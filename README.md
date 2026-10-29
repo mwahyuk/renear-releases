@@ -11,3 +11,7 @@ Renear adalah aplikasi desktop Windows untuk merekam rapat, mentranskrip audio, 
 Setelah terpasang, Renear mengecek update setiap kali dibuka dan menawarkan versi baru secara otomatis.
 
 Repo ini hanya berisi file rilis; kode sumber Renear tidak dipublikasikan.
+
+## Riwayat perubahan
+
+Catatan setiap versi ada di halaman [Releases](https://github.com/mwahyuk/renear-releases/releases). Di dalam aplikasi, riwayat versi bisa dibuka di **Pengaturan → Aplikasi**, dan ringkasan "Apa yang baru" muncul sekali setelah Renear diperbarui.

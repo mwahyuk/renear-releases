@@ -7,7 +7,9 @@ Renear adalah aplikasi desktop Windows untuk merekam rapat, mentranskrip audio, 
 - **Rekam rapat:** mikrofon, suara sistem (Zoom, Meet, Teams), atau keduanya. Mic dan suara sistem bisa dibisukan sendiri-sendiri, dan gain mikrofon bisa diatur.
   - Dua rapat yang berjalan bersamaan juga bisa direkam terpisah, asalkan suaranya diputar ke perangkat berbeda. Contoh: satu rapat ke speaker, satu lagi ke headset.
   - Rekaman yang sudah ada (WAV, MP3, M4A, FLAC, OGG) bisa diimpor.
+- **Isi otomatis dari undangan:** impor file undangan kalender (.ics) dari email, Outlook, Zoom, atau Google Calendar; judul, waktu, platform, peserta, dan agenda langsung terisi.
 - **Transkrip otomatis** setiap ±10 menit selama rapat berlangsung. Bahasa dikenali otomatis.
+- **Cari di semua rapat** (Ctrl+K): judul, peserta, agenda, isi transkrip, dan isi MoM/laporan, dengan kata yang cocok disorot.
 - **Dokumentasi:**
   - screenshot window rapat secara berkala;
   - tombol **Snap** untuk screenshot kapan saja;
@@ -55,6 +57,19 @@ Tombol **Dapatkan key** di Renear langsung membuka halaman pembuatannya. Dengan 
 ### Ekspor PDF
 
 Ekspor PDF memakai **Microsoft Word**, **LibreOffice**, atau **GenOffice**, mana pun yang terpasang. Ekspor Word bisa dipakai tanpa ketiganya.
+
+### Mengisi rapat dari undangan kalender (.ics)
+
+Di halaman **Buat meeting**, klik **Impor undangan (.ics)** lalu pilih file undangannya. Judul, waktu, platform, tempat, peserta, dan agenda terisi otomatis; periksa lalu simpan. Tautan rapat, ID, dan kode sandi tidak ikut disalin, dan file hanya dibaca di komputer Anda.
+
+Cara mendapatkan file .ics:
+
+- **Email undangan** (Gmail, Yahoo, email kantor): buka email undangan, cari lampiran `invite.ics` di bagian bawah, lalu unduh.
+- **Outlook desktop:** buka rapat di Kalender → **File → Simpan Sebagai** → pada *Save as type* pilih **iCalendar Format (\*.ics)**. Cara cepat: seret rapat dari kalender ke Desktop. Undangan Microsoft Teams juga bisa diambil dengan cara ini.
+- **Zoom:** masuk ke zoom.us → **Meetings** → klik judul rapat → **Outlook Calendar (.ics)**.
+- **Google Calendar:** untuk undangan dari orang lain, unduh lampiran `invite.ics` dari email undangannya. Untuk acara buatan sendiri: **Setelan → Impor & ekspor → Ekspor**, ekstrak file .zip, lalu pilih file .ics kalender Anda; Renear menampilkan daftar acaranya untuk dipilih.
+
+Rapat berulang diisi dengan jadwal pertamanya.
 
 ## Update
 

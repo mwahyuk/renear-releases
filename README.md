@@ -14,6 +14,7 @@ Renear adalah aplikasi desktop Windows untuk merekam rapat, mentranskrip audio, 
   - foto yang diunggah sendiri, misalnya foto ruang rapat.
 - **MoM dan laporan** disusun AI dari transkrip, lalu bisa disunting sebelum diekspor ke Word atau PDF dengan template kantor. Ada pratinjau halaman seperti di Word.
 - **Backup dan pindah perangkat:** semua rapat, dokumen, dan pengaturan disimpan ke satu file, lalu bisa diimpor di komputer lain.
+- **Sinkronisasi antar perangkat** (opsional, dengan akun Google): rapat, transkrip, dan hasil MoM/laporan sama di semua komputer Anda.
 - **Mode terang/gelap** dan **update otomatis** di latar belakang.
 
 ## Cara memasang
@@ -21,6 +22,26 @@ Renear adalah aplikasi desktop Windows untuk merekam rapat, mentranskrip audio, 
 1. Buka halaman [Releases](https://github.com/mwahyuk/renear-releases/releases/latest) dan unduh `Renear_<versi>_x64-setup.exe`.
 2. Jalankan installer. Bila muncul **"Windows protected your PC"**, klik **More info → Run anyway**. Installer belum memakai sertifikat code signing.
 3. Buka Renear dan mulai rekam. Transkripsi dan pembuatan MoM langsung bisa dipakai tanpa mengisi API key apa pun, dengan kuota pemakaian bulanan.
+
+### Akun (opsional)
+
+Saat pertama dibuka, Renear menawarkan dua pilihan: **pakai di komputer ini saja**, atau **masuk dengan Google**. Login bersifat opsional, dan pilihan ini bisa diubah kapan saja di **Pengaturan → Akun**.
+
+Dengan login, kuota pemakaian dihitung per orang dan bisa dipakai di beberapa komputer. Login saja hanya mengirim email, nama, dan foto profil Google Anda ke server Renear. Isi rapat tetap tersimpan di komputer.
+
+### Sinkronisasi antar perangkat (opsional)
+
+Setelah masuk dengan Google, sinkronisasi bisa diaktifkan di **Pengaturan → Akun**. Rapat lalu sama di semua komputer yang memakai akun tersebut, tanpa backup dan impor manual.
+
+> **Penting:** dengan sinkronisasi, data rapat keluar dari komputer Anda dan disimpan di server. Renear meminta persetujuan sebelum mengaktifkannya.
+
+- **Yang disinkronkan:** daftar rapat (judul, waktu, peserta, agenda), transkrip, isi MoM dan laporan, gambar dokumentasi yang dicentang, dan pengaturan umum (model, bahasa, tingkat detail).
+- **Yang tetap di komputer:** file audio rekaman, file Word/PDF hasil ekspor, API key, dan pilihan mikrofon/speaker.
+- **API key (opsional):** dengan **Sinkronkan juga API key**, key Groq dan Gemini disimpan terenkripsi di server Renear dan terpasang otomatis di komputer lain. Server yang memegang kunci enkripsinya, jadi bila key bocor, cabut dan buat ulang di situs penyedianya. Bila dimatikan, key dihapus dari server. Transkrip dari komputer lain bisa dibaca dan disunting, tetapi tidak bisa ditranskrip ulang karena audionya tidak ikut.
+- **Tempat penyimpanan:** teks disimpan di server Renear (Cloudflare). Gambar dienkripsi lalu disimpan di layanan penyimpanan file pihak ketiga.
+- Bila data yang sama diubah di dua komputer, perubahan terakhir yang dipakai. Menghapus rapat juga menghapusnya di komputer lain.
+- Sinkronisasi berlaku untuk semua rapat. Untuk rapat yang bersifat rahasia, jangan aktifkan sinkronisasi.
+- Sinkronisasi bisa dihentikan kapan saja, dan **Hapus data saya di server** menghapus seluruh salinan di server.
 
 ### Memakai API key sendiri (opsional)
 
@@ -42,6 +63,7 @@ Renear mengecek versi baru saat dibuka dan beberapa kali sehari. Versi baru diun
 ## Data dan privasi
 
 - Rekaman, transkrip, dokumen, dan pengaturan tersimpan di komputer Anda (`%APPDATA%\com.renear.app`). API key disimpan di Windows Credential Manager.
+- Bila sinkronisasi diaktifkan, salinan rapat (tanpa audio dan file Word/PDF) disimpan di server Renear seperti dijelaskan di atas.
 - Untuk transkripsi dan pembuatan dokumen, audio dan teks rapat dikirim ke layanan AI pihak ketiga (Groq, Google Gemini, Agnes AI), baik lewat layanan Renear maupun langsung bila memakai key sendiri. Isi rapat tidak disimpan oleh layanan Renear.
 - Untuk rapat yang bersifat rahasia, sebaiknya tidak memakai fitur AI.
 

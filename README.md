@@ -39,6 +39,7 @@ Di daftar rapat, tiga titik di bawah tanggal menunjukkan sampai mana setiap rapa
   - Dua rapat yang berjalan bersamaan bisa direkam terpisah, asalkan suaranya diputar ke perangkat berbeda (misalnya satu ke speaker, satu ke headset).
   - Rekaman yang sudah ada (WAV, MP3, M4A, FLAC, OGG) bisa diimpor.
 - **Isi otomatis dari undangan:** impor file undangan kalender (.ics) dari email, Outlook, Zoom, atau Google Calendar; judul, waktu, platform, peserta, dan agenda langsung terisi.
+  - Atau tempel teks undangan (mis. daftar agenda harian dari WhatsApp): AI memisahkan setiap rapat, dan beberapa meeting bisa dibuat sekaligus. Link rapat ikut tersimpan, jadi rapat bisa langsung dibuka dengan tombol **Gabung rapat**.
 - **Transkrip langsung:** progres transkripsi dan cuplikan transkrip terbaru tampil di samping perekam selama rapat berjalan.
 - **Cari di semua rapat** (Ctrl+K): judul, peserta, agenda, isi transkrip, dan isi MoM/laporan, dengan kata yang cocok disorot.
 - **Dokumentasi:** screenshot window rapat secara berkala, tombol **Snap** untuk screenshot kapan saja, dan foto yang diunggah sendiri.

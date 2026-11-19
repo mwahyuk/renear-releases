@@ -41,6 +41,7 @@ Di daftar rapat, tiga titik di bawah tanggal menunjukkan sampai mana setiap rapa
 - **Isi otomatis dari undangan:** impor file undangan kalender (.ics) dari email, Outlook, Zoom, atau Google Calendar; judul, waktu, platform, peserta, dan agenda langsung terisi.
   - Atau tempel teks undangan (mis. daftar agenda harian dari WhatsApp): AI memisahkan setiap rapat, dan beberapa meeting bisa dibuat sekaligus. Link rapat ikut tersimpan, jadi rapat bisa langsung dibuka dengan tombol **Gabung rapat**.
 - **Transkrip langsung:** progres transkripsi dan cuplikan transkrip terbaru tampil di samping perekam selama rapat berjalan.
+- **Kalender:** lihat jadwal meeting sebulan penuh, pilih tanggal untuk melihat rapat hari itu, atau buat meeting baru langsung di tanggal tersebut. Daftar meeting juga dikelompokkan per bulan, dengan bulan berjalan terbuka.
 - **Cari di semua rapat** (Ctrl+K): judul, peserta, agenda, isi transkrip, dan isi MoM/laporan, dengan kata yang cocok disorot.
 - **Dokumentasi:** screenshot window rapat secara berkala, tombol **Snap** untuk screenshot kapan saja, dan foto yang diunggah sendiri.
 - **MoM dan laporan:** pilih tingkat detail **Lengkap** atau **Ringkas**. Saat menyunting, preview halaman Word ikut diperbarui di sampingnya.
